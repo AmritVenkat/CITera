@@ -1,84 +1,78 @@
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#f4f6f8;
-      color:#333;
-    }
+/* Reset default browser style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-    header{
-      background:#3f51b5;
-      color:white;
-      padding:20px;
-      text-align:center;
-    }
+/* Full screen center */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    nav{
-      background:#e8eaf6;
-      padding:10px;
-      text-align:center;
-    }
+/* Main card */
+.container {
+  background: white;
+  padding: 40px 50px;
+  width: 380px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
-    nav a{
-      margin:0 15px;
-      text-decoration:none;
-      color:#333;
-      font-weight:bold;
-    }
+/* Title */
+.container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 12px;
+}
 
-    .hero{
-      padding:50px 20px;
-      text-align:center;
-    }
+/* Description */
+.tagline {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 
-    .hero h1{
-      color:#3f51b5;
-      font-size:36px;
-    }
+/* Buttons wrapper */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
 
-    .hero p{
-      max-width:800px;
-      margin:20px auto;
-      line-height:1.6;
-      font-size:16px;
-    }
+/* Common button style */
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .features{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      padding:40px 20px;
-      flex-wrap:wrap;
-    }
+/* Login button */
+.login {
+  background: #1976d2;
+  color: white;
+}
 
-    .card{
-      background:white;
-      width:260px;
-      padding:20px;
-      border-radius:10px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      text-align:center;
-    }
+.login:hover {
+  background: #0d47a1;
+}
 
-    .card h3{
-      color:#3f51b5;
-    }
+/* Signup button */
+.signup {
+  background: #f3f3f3;
+  color: #333;
+}
 
-    .btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:10px 25px;
-      background:#3f51b5;
-      color:white;
-      text-decoration:none;
-      border-radius:5px;
-    }
-
-    footer{
-      background:#3f51b5;
-      color:white;
-      text-align:center;
-      padding:10px;
-      margin-top:30px;
-    }
-  </style>
+.signup:hover {
+  background: #e0e0e0;
+}
