@@ -1,26 +1,170 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Citera</title>
-        <link rel="stylesheet" href="styleindex.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CITera | Smart Academic Organizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Simple CSS -->
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f4f6f8;
+      color:#333;
+    }
 
-<body id="hpbody">
-    <h2> Welcome to Citera </h2>
-    <button onclick="login()">login</button>
-    <button onclick="signup()">signup</button>
+    header{
+      background:#3f51b5;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
 
-    <script>
-        function login(){
-            alert("login")
-            window.location.href="login.html"
-        }
-        function signup(){
-            alert("signup")
-            window.location.href="signup.html"
-        }
-    </script>
+    nav{
+      background:#e8eaf6;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      margin:0 15px;
+      text-decoration:none;
+      color:#333;
+      font-weight:bold;
+    }
+
+    .hero{
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .hero h1{
+      color:#3f51b5;
+      font-size:36px;
+    }
+
+    .hero p{
+      max-width:800px;
+      margin:20px auto;
+      line-height:1.6;
+      font-size:16px;
+    }
+
+    .features{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      padding:40px 20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:260px;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+
+    .card h3{
+      color:#3f51b5;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:10px 25px;
+      background:#3f51b5;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    footer{
+      background:#3f51b5;
+      color:white;
+      text-align:center;
+      padding:10px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>CITera</h2>
+    <p>Smart Academic File Organizer</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Signup</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Organize Your College Life with CITera</h1>
+    <p>
+      This project organizes all academic files into <b>Study Material</b>,
+      <b>Assignments</b>, and <b>Important Announcements</b> to reduce confusion
+      and save time. By keeping everything structured and easy to find, CITera
+      helps make college life more organized, efficient, and stress-free.
+    </p>
+    <a class="btn" href="#">Get Started</a>
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="card">
+      <h3>📚 Study Material</h3>
+      <p>All notes, PDFs, and learning resources neatly arranged by subject and unit.</p>
+    </div>
+
+    <div class="card">
+      <h3>📝 Assignments</h3>
+      <p>Clear assignment details, deadlines, and uploads without confusion.</p>
+    </div>
+
+    <div class="card">
+      <h3>📢 Announcements</h3>
+      <p>Never miss important college updates, notices, or exam information.</p>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script>
+    // Firebase Configuration (replace with your project details)
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Example: check login state
+    firebase.auth().onAuthStateChanged(user => {
+      if(user){
+        console.log("User logged in:", user.email);
+      } else {
+        console.log("No user logged in");
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 CITera | Designed for Students</p>
+  </footer>
+
 </body>
-
 </html>
