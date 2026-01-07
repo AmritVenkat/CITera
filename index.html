@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Citera</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styleindex.css">
+    <meta charset="UTF-8">
+    <title>OBE Analytics Platform</title>
+    <link rel="stylesheet" href="styleindex.css">
 </head>
-<body>
 
-  <div class="container">
-    <h1>Citera</h1>
-    <p class="tagline">
-      A simple platform to connect students, teachers, and admins —  
-      learn, manage, and grow together.
-    </p>
+<body class="home">
 
-    <div class="buttons">
-      <button class="login" onclick="goLogin()">Login</button>
-      <button class="signup" onclick="goSignup()">Sign Up</button>
-    </div>
-  </div>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">CITera</div>
+            <ul class="nav-links">
+                <li><a href="student.html">Student</a></li>
+                <li><a href="teacher.html">Teacher</a></li>
 
-  <script>
-    function goLogin() {
-      window.location.href = "login.html";
-    }
+            </ul>
+        </nav>
+    </header>
 
-    function goSignup() {
-      window.location.href = "signup.html";
-    }
-  </script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>A Smarter Way to Measure Learning Outcomes</h1>
+        <p>
+            A futuristic Outcome-Based Education analytics platform that converts
+            raw student marks into meaningful insights.
+        </p>
+        <div class="hero-actions">
+            <button>Explore Platform</button>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+        <h2>What We Do</h2>
+
+        <article>
+            <h3>Excel to CO Intelligence</h3>
+            <p>
+                Teachers upload Excel sheets. The system automatically analyzes
+                Course Outcome attainment.
+            </p>
+        </article>
+
+        <article>
+            <h3>Outcome-Based Analytics</h3>
+            <p>
+                Measure learning levels using Bloom’s Taxonomy:
+                Memorization, Understanding, Application, Analysis, and Problem Solving.
+            </p>
+        </article>
+
+        <article>
+            <h3>Visual Dashboards</h3>
+            <p>
+                Interactive dashboards help teachers and students understand
+                performance clearly.
+            </p>
+        </article>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact">
+        <h2>Impact</h2>
+
+        <div class="impact-student">
+            <h3>Impact on Students</h3>
+            <p>
+                Students identify weak learning areas early and improve through
+                self-assessment.
+            </p>
+        </div>
+
+        <div class="impact-teacher">
+            <h3>Impact on Teachers</h3>
+            <p>
+                Teachers redesign teaching strategies using data-driven insights.
+            </p>
+        </div>
+    </section>
+
+    <!-- Future Vision -->
+    <section class="future-vision">
+        <h2>Our Future Vision</h2>
+        <p>
+            To build an intelligent academic ecosystem combining analytics,
+            visualization, and AI to continuously improve learning outcomes.
+        </p>
+    </section>
+
+    <!-- Subjects -->
+    <section class="subjects">
+        <h2>Core Subjects</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Java Programming</li>
+            <li>AWS Cloud Computing</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Outcome-Based Education Analytics Platform · Designed for the Future of Learning
+        </p>
+    </footer>
 
 </body>
+
 </html>

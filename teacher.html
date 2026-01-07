@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard | OBE Analytics</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+
+<body class="teacher-dashboard">
+
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav>
+            <div class="logo">CITera</div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="dashboard-header">
+        <h1>Teacher Dashboard</h1>
+        <p>
+            Analyze Course Outcome attainment, identify weak learning areas,
+            and take data-driven academic decisions.
+        </p>
+    </section>
+
+    <!-- ================= EXCEL UPLOAD ================= -->
+    <section class="data-upload">
+        <h2>Upload Student Performance Data</h2>
+
+        <p>
+            Upload Excel (.xlsx) file containing student marks to generate
+            Course Outcome analytics.
+        </p>
+
+        <form class="upload-form">
+            <label for="excelFile">Select Excel File:</label><br>
+            <input type="file" id="excelFile" accept=".xlsx"><br><br>
+            <button type="button">Upload & Analyze</button>
+        </form>
+
+        <div class="upload-summary">
+            <p><strong>Total Students Loaded:</strong> <span>--</span></p>
+        </div>
+    </section>
+
+    <!-- ================= FILTERS ================= -->
+    <section class="filters">
+        <h2>Filters</h2>
+
+        <p>
+            Apply filters to focus on students who need academic attention.
+        </p>
+
+        <label>
+            <input type="checkbox">
+            Show students with attendance below 75%
+        </label>
+    </section>
+
+    <!-- ================= SUBJECT-WISE CO ATTAINMENT ================= -->
+    <section class="co-attainment">
+        <h2>Subject-wise Course Outcome Attainment</h2>
+
+        <p>
+            View CO1–CO5 attainment levels for each subject.
+        </p>
+
+        <div class="chart-placeholder">
+            <p>[ Bar Chart: Web Development – CO1 to CO5 ]</p>
+        </div>
+
+        <div class="chart-placeholder">
+            <p>[ Bar Chart: Java – CO1 to CO5 ]</p>
+        </div>
+
+        <div class="chart-placeholder">
+            <p>[ Bar Chart: AWS – CO1 to CO5 ]</p>
+        </div>
+    </section>
+
+    <!-- ================= SUBJECT COMPARISON ================= -->
+    <section class="subject-comparison">
+        <h2>Subject Comparison</h2>
+
+        <p>
+            Compare overall Course Outcome attainment across subjects
+            (average of CO1–CO5).
+        </p>
+
+        <div class="chart-placeholder">
+            <p>[ Comparison Bar Chart: Web vs Java vs AWS ]</p>
+        </div>
+    </section>
+
+    <!-- ================= CLASS AVERAGE RADAR ================= -->
+    <section class="class-average">
+        <h2>Class Average CO Performance</h2>
+
+        <p>
+            Radar charts showing class-level performance across CO1–CO5
+            for each subject.
+        </p>
+
+        <div class="chart-placeholder">
+            <p>[ Radar Chart: Web Development ]</p>
+        </div>
+
+        <div class="chart-placeholder">
+            <p>[ Radar Chart: Java ]</p>
+        </div>
+
+        <div class="chart-placeholder">
+            <p>[ Radar Chart: AWS ]</p>
+        </div>
+    </section>
+
+    <!-- ================= WEAK CO HIGHLIGHT ================= -->
+    <section class="weak-co-section">
+        <h2>Weak Course Outcome Identification</h2>
+
+        <p>
+            Course Outcomes with average score below 4 are marked as weak
+            and require instructional intervention.
+        </p>
+
+        <ul class="weak-co-list">
+            <li>CO2 – Understanding (Web Development)</li>
+            <li>CO4 – Analysis (Java)</li>
+        </ul>
+    </section>
+
+    <!-- ================= PERFORMANCE INDICATORS ================= -->
+    <section class="performance-indicators">
+        <h2>Performance Indicators</h2>
+
+        <ul>
+            <li>Good (7–10)</li>
+            <li>Improving (4–6)</li>
+            <li>Weak (0–3)</li>
+        </ul>
+    </section>
+
+    <!-- ================= ACTIONS ================= -->
+    <section class="actions">
+        <h2>Actions</h2>
+
+        <button type="button">Export Charts as PNG</button>
+        <button type="button">Download Report (PDF)</button>
+    </section>
+
+    <!-- ================= TEACHING INSIGHTS ================= -->
+    <section class="teaching-insights">
+        <h2>Teaching Insights</h2>
+
+        <p>
+            Analytics-driven insights help instructors redesign teaching
+            strategies to improve learning outcomes.
+        </p>
+
+        <ul>
+            <li>Focus on application-based learning activities</li>
+            <li>Reinforce conceptual understanding in weak COs</li>
+            <li>Monitor attendance-impact correlation</li>
+        </ul>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>
+            Teacher Dashboard · Outcome-Based Education Analytics Platform
+        </p>
+    </footer>
+
+</body>
+
+</html>
